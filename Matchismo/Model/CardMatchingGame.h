@@ -13,6 +13,10 @@
 @interface CardMatchingGame : NSObject
 
 @property (readonly, nonatomic) int score;
+@property (readonly, nonatomic) int flipCount;
+@property (nonatomic) int gameMode;
+@property (readonly, nonatomic) NSString *status;
+
 
 //designated initializer
 - (id)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck;
